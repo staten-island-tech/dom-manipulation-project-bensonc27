@@ -1,4 +1,6 @@
-const button = document.getElementByClass("button");
-const text = document.querySelector("text");
+const DomSelectors = {
+  button: document.querySelector("button"),
+  text: document.querySelector("text"),
+};
 
-function Create() {}
+console.log(DomSelectors);
