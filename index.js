@@ -3,7 +3,7 @@ const DomSelectors = {
   name: document.getElementById("Fname"),
   age: document.getElementById("age"),
   image: document.getElementById("image"),
-  CardList: document.querySelector(".CardList"),
+  container: document.querySelector(".container"),
 };
 
 function CreateCard(name, age, image) {
@@ -19,7 +19,7 @@ function CreateCard(name, age, image) {
     </div>
     <button class="remove">Delete</button>   
     `;
-    DomSelectors.CardList.appendChild(output); // The output exists in code, but needs to be added into HTML, append adds the code into the HTMl as a child element
+    DomSelectors.container.appendChild(output); // The output exists in code, but needs to be added into HTML, append adds the code into the HTMl as a child element
     gone(output); // Calls on the function "remove"
   }
 }
