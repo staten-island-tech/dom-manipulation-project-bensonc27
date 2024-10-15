@@ -19,15 +19,15 @@ function CreateCard(name, age, image) {
     </div>
     <button class="remove">Delete</button>   
     `;
-    DomSelectors.container.appendChild(output); // The output exists in code, but needs to be added into HTML, append adds the code into the HTMl as a child element
-    gone(output); // Calls on the function "remove"
+    DomSelectors.container.append(output); // The output exists in code, but needs to be added into HTML, append adds the code into the HTMl as a child element
+    return output;
   }
 }
 
 function gone(output) {
-  const button = output.querySelector(".remove");
+  const button = output.querySelector(".remove"); // Select the remove button from the output card
   button.addEventListener("click", function () {
-    output.remove();
+    output.remove(); // When the remove button is clicked, delete the card
   });
 }
 
@@ -42,6 +42,7 @@ DomSelectors.button.addEventListener("click", function (event) {
   const name = DomSelectors.name.value;
   const age = DomSelectors.age.value;
   const image = DomSelectors.image.value;
-  CreateCard(name, age, image);
-  reset();
+  const output = CreateCard(name, age, image); // Create the Card
+  gone(output); // Calls on the function "remove"
+  reset(); // Reset the values
 });

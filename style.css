@@ -4,7 +4,7 @@ body{
 
 .output{
     margin: 0 auto;
-    background-color: gainsboro;
-    height:45%;
-    width:30%;
+    background-color: rgb(255, 205, 205);
+    height:40%;
+    width:34%;
 }
