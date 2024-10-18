@@ -1,10 +1,28 @@
 body{
     text-align: center;
+    background-image: url(https://wallpapers.com/images/hd/plain-pastel-color-84co1sdwelht9w24.jpg)
 }
 
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    margin: 0 auto;
+}
 .output{
     margin: 0 auto;
     background-color: rgb(255, 205, 205);
     height:40%;
     width:34%;
 }
+
+.label{
+    margin-top: 10px;
+}
+
+.remove
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
